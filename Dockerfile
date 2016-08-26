@@ -7,8 +7,6 @@ RUN apk update && apk upgrade && \
 
 RUN npm install -g stylelint
 
-WORKDIR /opt/scripts/
-
 COPY entrypoint.sh /opt/scripts/
 
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["/opt/scripts/entrypoint.sh"]
