@@ -9,6 +9,6 @@ RUN npm install -g stylelint
 
 WORKDIR /opt/scripts/
 
-COPY entrypoint.sh
+COPY entrypoint.sh /opt/scripts/
 
 ENTRYPOINT ["entrypoint.sh"]
